@@ -7,7 +7,7 @@ from .workspace_understanding_agent import workspace_understanding_agent
 
 root_agent = Agent(
     # model="gemini-2.5-pro-preview-06-05",
-    model="gemini-2.5-flash",
+    model="gemini-2.5-pro",
     name="root_agent",
     description="A root agent that can read Discord channels and messages",
     instruction="""
@@ -20,7 +20,7 @@ root_agent = Agent(
                     command="python3",
                     args=["-m", "discord_agent.tools.discord_mcp.server"],
                 ),
-                timeout=120,
+                timeout=20,
             )
         )
     ],

@@ -8,6 +8,7 @@ from google.adk.runners import LlmAgent, Runner
 from google.adk.sessions import InMemorySessionService
 from google.adk.memory.in_memory_memory_service import InMemoryMemoryService
 from google.adk.artifacts.in_memory_artifact_service import InMemoryArtifactService
+from google.adk.plugins.logging_plugin import LoggingPlugin
 
 class MultiAgentTester:
     """Test harness for multi-agent email communication scenarios."""
@@ -29,7 +30,8 @@ class MultiAgentTester:
             agent=agent,
             artifact_service=self.artifacts_service,
             session_service=self.session_service,
-            memory_service=self.memory_service
+            memory_service=self.memory_service,
+            plugins=[LoggingPlugin()]
         )
         
         self.session = None

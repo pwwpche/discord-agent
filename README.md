@@ -21,9 +21,23 @@ Follow https://www.speakeasy.com/blog/build-a-mcp-server-tutorial to generate an
 
 * Bot application OAuth: https://discord.com/developers/applications/1390023815563837501/oauth2
 
+### Installation
+
+Add this link to Discord server
+https://discord.com/oauth2/authorize?client_id=1390023815563837501&permissions=65536&integration_type=0&scope=bot
+
 ### Run
 
 ```bash
 cd discord_agent/
 python3 -m main
 ```
+
+
+
+End User Flow
+
+
+
+Summarize message from this discord server (https://discord.com/channels/1338823128947757149/1338825282945155152)
+Run `python3 -m main.py` outputs message

@@ -92,7 +92,7 @@ def register_tools(app: Server):
                                     "description": "Number of messages to fetch (max 500)",
                                     "minimum": 1,
                                     "maximum": 500,
-                                    "default": 10
+                                    "default": 500
                                 },
                                 "before": {
                                     "type": "string",
